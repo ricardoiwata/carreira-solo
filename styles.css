@@ -1,0 +1,458 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+:root {
+  --color-primary: #052a3a;
+  --color-white: #ffffff;
+  --color-gold: #e5c16c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #052a3a;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: var(--color-white);
+  min-height: 100vh;
+  padding-top: 5rem;
+  overflow-x: hidden;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5rem;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  background-color: var(--color-primary);
+  z-index: 1000;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  background-color: var(--color-primary);
+}
+
+.logo img {
+  width: 2.875rem;
+  height: 2.875rem;
+  margin-right: 1rem;
+}
+
+.logo-text {
+  font-size: 1.75rem;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+}
+
+.logo-text--white {
+  color: var(--color-white);
+}
+.logo-text--gold {
+  color: var(--color-gold);
+}
+
+.main-content {
+  min-height: calc(100vh - 5rem);
+  padding: 2rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin-top: -6.875rem;
+}
+
+.hero {
+  text-align: left;
+  margin-left: 5%;
+  position: relative;
+  max-width: 1200px;
+  padding: 0 1rem;
+}
+
+.hero__title {
+  font-size: 4.5rem;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+
+.hero__description {
+  font-size: 1.5rem;
+}
+
+.hero__phrase {
+  font-size: 4rem;
+  margin-top: 3.125rem;
+  text-align: center;
+  margin-bottom: 6.25rem;
+}
+
+.text-default {
+  font-weight: 400;
+}
+
+.text-default-highlight {
+  font-weight: 700;
+}
+
+.text-gold {
+  color: var(--color-gold);
+}
+
+.text-highlight {
+  color: var(--color-gold);
+  font-weight: 700;
+}
+
+.saiba-mais-text {
+  margin-top: -7.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-white);
+  cursor: pointer;
+  font-size: 1.125rem;
+  transition: color 0.3s;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 7.5rem;
+}
+
+.saiba-mais-text:hover {
+  color: var(--color-gold);
+}
+
+.btn-icon {
+  margin-right: 0.5rem;
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.macbook-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 6.25rem;
+  padding: 0 2rem;
+}
+
+.macbook-div p {
+  margin-right: 1.25rem;
+  max-width: 50%;
+}
+
+.macbook-div img {
+  max-width: 50%;
+  height: auto;
+}
+
+.community-section {
+  background-color: #003b54;
+  text-align: center;
+  padding: 3.125rem 1.25rem;
+  margin-top: 6.25rem;
+  width: 75%;
+  flex: 1;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 2.5rem;
+  margin-bottom: 6.25rem;
+}
+
+.community-text {
+  font-size: 4rem;
+  margin-bottom: 1.25rem;
+  margin-top: 3.125rem;
+}
+
+.community-button {
+  background-color: var(--color-gold);
+  color: var(--color-primary);
+  border: none;
+  padding: 0.938rem 1.875rem;
+  font-size: 2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 1.125rem;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 6.25rem;
+}
+
+.community-button:hover {
+  background-color: #d4b15a;
+}
+
+.community__description {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+}
+
+.phrase-text {
+  font-weight: 400;
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+.phrase-text-div {
+  text-align: right;
+  margin-right: 12.5rem;
+  margin-bottom: 12.5rem;
+  margin-top: 12.5rem;
+}
+
+.prosper__phrase {
+  font-size: 4rem;
+  margin-top: 3.125rem;
+  text-align: center;
+  margin-bottom: 15.625rem;
+}
+
+.intelect__phrase {
+  font-size: 4rem;
+  margin-top: 15.625rem;
+  text-align: center;
+  margin-bottom: 9.375rem;
+}
+
+.wish-text {
+  font-size: 3rem;
+  margin-bottom: 1.25rem;
+}
+
+.wish__description {
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+}
+
+.wish-button {
+  background-color: var(--color-gold);
+  color: var(--color-primary);
+  border: none;
+  padding: 0.938rem 1.875rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 2.125rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.wish-button:hover {
+  background-color: #d4b15a;
+}
+
+@media (max-width: 1200px) {
+  .hero {
+    margin-left: 2%;
+  }
+
+  .hero__title {
+    font-size: 3.5rem;
+  }
+
+  .hero__description {
+    font-size: 1.25rem;
+  }
+
+  .community-section {
+    width: 90%;
+  }
+
+  .phrase-text-div {
+    margin-right: 5%;
+  }
+
+  .macbook-div {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .macbook-div p {
+    margin-right: 0;
+    margin-bottom: 2rem;
+    max-width: 100%;
+  }
+
+  .macbook-div img {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  * {
+    padding: 0;
+  }
+  .main-content {
+    padding: 8rem 1rem;
+  }
+
+  .hero {
+    padding: 2;
+  }
+
+  .hero__title {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .hero__description {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .hero__phrase {
+    font-size: 2.5rem;
+  }
+
+  .macbook-div {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+  }
+
+  .hero__description {
+    font-size: 1.25rem;
+  }
+
+  .macbook-div p {
+    margin-right: 0;
+    margin-bottom: 1rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  .macbook-div img {
+    width: 100%;
+    max-width: 300px; /* ou o valor que preferir */
+  }
+
+  .community-text {
+    font-size: 2.5rem;
+  }
+
+  .community-button {
+    font-size: 1.5rem;
+  }
+
+  .community__description {
+    font-size: 1.25rem;
+  }
+
+  .phrase-text-div {
+    text-align: center;
+    margin-right: 0;
+  }
+
+  .prosper__phrase,
+  .intelect__phrase {
+    font-size: 2.5rem;
+  }
+
+  .wish-text {
+    font-size: 2rem;
+  }
+
+  .phrase-text-div,
+  .prosper__phrase,
+  .intelect__phrase {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  .community-section {
+    width: 80%;
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 0 1rem;
+  }
+
+  .logo img {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .logo-text {
+    font-size: 1.25rem;
+  }
+
+  .hero__title {
+    font-size: 2rem;
+  }
+
+  .hero__description {
+    font-size: 0.9rem;
+  }
+
+  .community-text,
+  .prosper__phrase,
+  .intelect__phrase {
+    font-size: 1.8rem;
+  }
+
+  .community-section {
+    width: 95%;
+  }
+
+  .community-button,
+  .wish-button {
+    font-size: 1.25rem;
+    padding: 0.75rem 1.5rem;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.9s ease-out, transform 0.9s ease-out;
+}
+
+.fade-in.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.slide-in-left {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.slide-in-left.is-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.slide-in-right {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.slide-in-right.is-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
